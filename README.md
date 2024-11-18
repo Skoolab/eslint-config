@@ -1,0 +1,1 @@
+# Skoolab - Eslint Config
