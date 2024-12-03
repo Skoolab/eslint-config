@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/Skoolab/eslint-config/issues"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "",
   "main": "index.js",
   "scripts": {
