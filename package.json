@@ -12,7 +12,11 @@
     "url": "https://github.com/Skoolab/eslint-config/issues"
   },
   "license": "MIT",
-  "author": "",
+  "author": {
+    "name": "Evrwaq",
+    "email": "evrwaq@gmail.com",
+    "url": "https://github.com/evrwaq"
+  },
   "main": "index.js",
   "scripts": {
     "check": "ncu --interactive --format group",
