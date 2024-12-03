@@ -7,6 +7,10 @@
     "eslint-config",
     "typescript"
   ],
+  "homepage": "https://github.com/Skoolab/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/Skoolab/eslint-config/issues"
+  },
   "license": "ISC",
   "author": "",
   "main": "index.js",
