@@ -21,7 +21,7 @@
     "type": "git",
     "url": "https://github.com/Skoolab/eslint-config.git"
   },
-  "main": "index.js",
+  "main": "eslint.config.js",
   "scripts": {
     "check": "ncu --interactive --format group",
     "prepare": "husky"
