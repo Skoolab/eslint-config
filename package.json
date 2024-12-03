@@ -2,7 +2,11 @@
   "name": "@skoolab/eslint-config",
   "version": "0.0.0",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript"
+  ],
   "license": "ISC",
   "author": "",
   "main": "index.js",
