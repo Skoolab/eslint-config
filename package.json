@@ -17,6 +17,10 @@
     "email": "evrwaq@gmail.com",
     "url": "https://github.com/evrwaq"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Skoolab/eslint-config.git"
+  },
   "main": "index.js",
   "scripts": {
     "check": "ncu --interactive --format group",
