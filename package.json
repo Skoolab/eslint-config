@@ -1,15 +1,19 @@
 {
   "name": "eslint-config",
+  "type": "module",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "check": "ncu --interactive --format group"
+    "check": "ncu --interactive --format group",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
     "npm-check-updates": "^17.1.11"
   }
 }
