@@ -24,6 +24,7 @@
   "main": "eslint.config.js",
   "scripts": {
     "check": "ncu --interactive --format group",
+    "check-publish-files": "npm pack --dry-run",
     "prepare": "husky"
   },
   "devDependencies": {
