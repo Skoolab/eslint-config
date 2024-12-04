@@ -36,5 +36,8 @@
     "husky": "^9.1.7",
     "npm-check-updates": "^17.1.11"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module"
 }
