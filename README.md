@@ -1,1 +1,1 @@
-# Skoolab - Eslint Config
+# Skoolab - ESlint Config
