@@ -25,6 +25,7 @@
   "scripts": {
     "check": "ncu --interactive --format group",
     "check-publish-files": "npm pack --dry-run",
+    "lint": "eslint .",
     "prepare": "husky"
   },
   "files": [
