@@ -1,0 +1,55 @@
+{
+  "name": "@skoolab/eslint-config",
+  "version": "0.1.0",
+  "description": "Skoolab ESlint custom rules for typescript projects.",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript"
+  ],
+  "homepage": "https://github.com/Skoolab/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/Skoolab/eslint-config/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Evrwaq",
+    "email": "evrwaq@gmail.com",
+    "url": "https://github.com/evrwaq"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Skoolab/eslint-config.git"
+  },
+  "main": "eslint.config.js",
+  "scripts": {
+    "check": "ncu --interactive --format group",
+    "check-publish-files": "npm pack --dry-run",
+    "lint": "eslint .",
+    "prepare": "husky"
+  },
+  "files": [
+    "eslint.config.js"
+  ],
+  "dependencies": {
+    "@eslint/js": "^9.16.0",
+    "@stylistic/eslint-plugin-ts": "^2.11.0",
+    "@types/eslint__js": "^8.42.3",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "typescript-eslint": "^8.17.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "husky": "^9.1.7",
+    "npm-check-updates": "^17.1.11"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module"
+}
