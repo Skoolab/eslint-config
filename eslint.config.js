@@ -17,6 +17,7 @@ export default tseslint.config(
       'eol-last': ['error', 'always'],
       'space-infix-ops': ['error'],
       'keyword-spacing': ['error', { before: true, after: true }],
+      'space-before-function-paren': ['error', 'never'],
     },
   }
 )
