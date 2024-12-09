@@ -19,6 +19,11 @@ export default tseslint.config(
       'keyword-spacing': ['error', { before: true, after: true }],
       'space-before-function-paren': ['error', 'never'],
       'space-before-blocks': ['error', 'always'],
+      'lines-between-class-members': [
+        'error',
+        'always',
+        { exceptAfterSingleLine: true },
+      ],
     },
   }
 )
