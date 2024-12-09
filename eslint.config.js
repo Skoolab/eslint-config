@@ -10,6 +10,8 @@ export default tseslint.config(
     plugins: {
       '@stylistic/ts': stylisticTs,
     },
-    rules: {},
+    rules: {
+      '@stylistic/ts/indent': ['error', 2],
+    },
   }
 )
