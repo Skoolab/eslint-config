@@ -18,6 +18,7 @@ export default tseslint.config(
       'space-infix-ops': ['error'],
       'keyword-spacing': ['error', { before: true, after: true }],
       'space-before-function-paren': ['error', 'never'],
+      'space-before-blocks': ['error', 'always'],
     },
   }
 )
