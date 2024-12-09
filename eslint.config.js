@@ -15,6 +15,7 @@ export default tseslint.config(
       '@stylistic/ts/quotes': ['error', 'single'],
       '@stylistic/ts/semi': ['error', 'never'],
       'eol-last': ['error', 'always'],
+      'space-infix-ops': ['error'],
     },
   }
 )
