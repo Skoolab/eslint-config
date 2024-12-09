@@ -24,6 +24,12 @@ export default tseslint.config(
         'always',
         { exceptAfterSingleLine: true },
       ],
+      'padding-line-between-statements': [
+        'error',
+        { blankLine: 'never', prev: 'class', next: '*' },
+        { blankLine: 'always', prev: 'import', next: 'class' },
+        { blankLine: 'always', prev: '*', next: 'export' },
+      ],
     },
   }
 )
