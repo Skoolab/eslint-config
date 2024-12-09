@@ -14,6 +14,7 @@ export default tseslint.config(
       '@stylistic/ts/indent': ['error', 2],
       '@stylistic/ts/quotes': ['error', 'single'],
       '@stylistic/ts/semi': ['error', 'never'],
+      'eol-last': ['error', 'always'],
     },
   }
 )
