@@ -16,6 +16,7 @@ export default tseslint.config(
       '@stylistic/ts/semi': ['error', 'never'],
       'eol-last': ['error', 'always'],
       'space-infix-ops': ['error'],
+      'keyword-spacing': ['error', { before: true, after: true }],
     },
   }
 )
