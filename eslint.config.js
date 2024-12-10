@@ -30,6 +30,7 @@ export default tseslint.config(
         { blankLine: 'always', prev: 'import', next: 'class' },
         { blankLine: 'always', prev: '*', next: 'export' },
       ],
+      'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0, maxBOF: 0 }],
     },
   }
 )
