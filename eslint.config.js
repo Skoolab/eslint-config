@@ -32,6 +32,10 @@ export default tseslint.config(
       ],
       'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0, maxBOF: 0 }],
       'space-in-parens': ['error', 'never'],
+      '@typescript-eslint/explicit-member-accessibility': [
+        'error',
+        { accessibility: 'explicit' },
+      ],
     },
   }
 )
