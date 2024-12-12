@@ -36,6 +36,10 @@ export default tseslint.config(
         'error',
         { accessibility: 'explicit' },
       ],
+      '@typescript-eslint/explicit-function-return-type': [
+        'error',
+        { allowExpressions: false },
+      ],
     },
   }
 )
