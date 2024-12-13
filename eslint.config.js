@@ -45,6 +45,15 @@ export default tseslint.config(
         'error',
         { allowExpressions: false },
       ],
+      '@typescript-eslint/typedef': [
+        'error',
+        {
+          propertyDeclaration: true,
+          variableDeclaration: false,
+          parameter: false,
+          memberVariableDeclaration: true,
+        },
+      ],
       'linebreak-style': ['error', 'unix'],
       'arrow-spacing': ['error', { before: true, after: true }],
       'import/order': [
