@@ -76,6 +76,13 @@ export default tseslint.config(
           'newlines-between': 'always',
         },
       ],
+      '@stylistic/ts/type-annotation-spacing': [
+        'error',
+        {
+          before: false,
+          after: true,
+        },
+      ],
     },
   }
 )
