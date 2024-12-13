@@ -42,8 +42,11 @@
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "husky": "^9.1.7",
-    "npm-check-updates": "^17.1.11"
+    "npm-check-updates": "^17.1.11",
+    "prettier": "^3.4.2"
   },
   "engines": {
     "node": "22"

@@ -1,6 +1,7 @@
 import eslint from '@eslint/js'
 import stylisticTs from '@stylistic/eslint-plugin-ts'
 import tseslint from 'typescript-eslint'
+import prettierPlugin from 'eslint-plugin-prettier'
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -9,6 +10,7 @@ export default tseslint.config(
   {
     plugins: {
       '@stylistic/ts': stylisticTs,
+      prettier: prettierPlugin,
     },
     rules: {
       '@stylistic/ts/indent': ['error', 2],
@@ -40,6 +42,7 @@ export default tseslint.config(
         'error',
         { allowExpressions: false },
       ],
+      'prettier/prettier': ['error'],
     },
   }
 )
