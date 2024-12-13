@@ -83,6 +83,7 @@ export default tseslint.config(
           after: true,
         },
       ],
+      'no-multi-spaces': ['error'],
     },
   }
 )
