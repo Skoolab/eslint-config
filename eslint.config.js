@@ -42,6 +42,7 @@ export default tseslint.config(
         'error',
         { allowExpressions: false },
       ],
+      'linebreak-style': ['error', 'unix'],
       'prettier/prettier': ['error'],
     },
   }
