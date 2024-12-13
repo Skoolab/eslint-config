@@ -13,6 +13,7 @@ export default tseslint.config(
       prettier: prettierPlugin,
     },
     rules: {
+      'prettier/prettier': ['error'],
       '@stylistic/ts/indent': ['error', 2],
       '@stylistic/ts/quotes': ['error', 'single'],
       '@stylistic/ts/semi': ['error', 'never'],
@@ -43,7 +44,7 @@ export default tseslint.config(
         { allowExpressions: false },
       ],
       'linebreak-style': ['error', 'unix'],
-      'prettier/prettier': ['error'],
+      'arrow-spacing': ['error', { before: true, after: true }],
     },
   }
 )
