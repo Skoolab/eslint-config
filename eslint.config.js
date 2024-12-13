@@ -1,7 +1,8 @@
 import eslint from '@eslint/js'
 import stylisticTs from '@stylistic/eslint-plugin-ts'
-import tseslint from 'typescript-eslint'
+import eslintPluginImport from 'eslint-plugin-import'
 import prettierPlugin from 'eslint-plugin-prettier'
+import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -10,6 +11,7 @@ export default tseslint.config(
   {
     plugins: {
       '@stylistic/ts': stylisticTs,
+      import: eslintPluginImport,
       prettier: prettierPlugin,
     },
     rules: {
@@ -45,6 +47,25 @@ export default tseslint.config(
       ],
       'linebreak-style': ['error', 'unix'],
       'arrow-spacing': ['error', { before: true, after: true }],
+      'import/order': [
+        'error',
+        {
+          groups: [['builtin'], ['external'], ['internal']],
+          pathGroups: [
+            {
+              pattern: '@/**',
+              group: 'internal',
+              position: 'after',
+            },
+          ],
+          pathGroupsExcludedImportTypes: ['builtin'],
+          alphabetize: {
+            order: 'asc',
+            caseInsensitive: true,
+          },
+          'newlines-between': 'always',
+        },
+      ],
     },
   }
 )
