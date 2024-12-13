@@ -84,6 +84,7 @@ export default tseslint.config(
         },
       ],
       'no-multi-spaces': ['error'],
+      'no-trailing-spaces': ['error'],
     },
   }
 )
