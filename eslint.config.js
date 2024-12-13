@@ -54,6 +54,7 @@ export default tseslint.config(
           memberVariableDeclaration: true,
         },
       ],
+      '@typescript-eslint/no-inferrable-types': 'off',
       'linebreak-style': ['error', 'unix'],
       'arrow-spacing': ['error', { before: true, after: true }],
       'import/order': [
