@@ -96,5 +96,9 @@ export default tseslint.config(
         },
       ],
     },
+    linterOptions: {
+      noInlineConfig: false,
+      reportUnusedDisableDirectives: true,
+    },
   }
 )
