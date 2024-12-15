@@ -15,28 +15,22 @@ export default tseslint.config(
       prettier: prettierPlugin,
     },
     rules: {
+      // Prettier rules
       'prettier/prettier': ['error'],
-      '@stylistic/ts/indent': ['error', 2],
-      '@stylistic/ts/quotes': ['error', 'single'],
-      '@stylistic/ts/semi': ['error', 'never'],
+
+      // ESLint rules
       'eol-last': ['error', 'always'],
-      'space-infix-ops': ['error'],
+      'linebreak-style': ['error', 'unix'],
+      'arrow-spacing': ['error', { before: true, after: true }],
       'keyword-spacing': ['error', { before: true, after: true }],
+      'no-multi-spaces': ['error'],
+      'no-trailing-spaces': ['error'],
+      'space-infix-ops': ['error'],
       'space-before-function-paren': ['error', 'never'],
       'space-before-blocks': ['error', 'always'],
-      'lines-between-class-members': [
-        'error',
-        'always',
-        { exceptAfterSingleLine: true },
-      ],
-      'padding-line-between-statements': [
-        'error',
-        { blankLine: 'never', prev: 'class', next: '*' },
-        { blankLine: 'always', prev: 'import', next: 'class' },
-        { blankLine: 'always', prev: '*', next: 'export' },
-      ],
       'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0, maxBOF: 0 }],
-      'space-in-parens': ['error', 'never'],
+
+      // TypeScript ESLint rules
       '@typescript-eslint/explicit-member-accessibility': [
         'error',
         { accessibility: 'explicit' },
@@ -55,8 +49,25 @@ export default tseslint.config(
         },
       ],
       '@typescript-eslint/no-inferrable-types': 'off',
-      'linebreak-style': ['error', 'unix'],
-      'arrow-spacing': ['error', { before: true, after: true }],
+
+      // Stylistic rules
+      '@stylistic/ts/indent': ['error', 2],
+      '@stylistic/ts/quotes': ['error', 'single'],
+      '@stylistic/ts/semi': ['error', 'never'],
+      '@stylistic/ts/type-annotation-spacing': [
+        'error',
+        {
+          before: false,
+          after: true,
+        },
+      ],
+      'lines-between-class-members': [
+        'error',
+        'always',
+        { exceptAfterSingleLine: true },
+      ],
+
+      // Import plugin rules
       'import/order': [
         'error',
         {
@@ -76,15 +87,8 @@ export default tseslint.config(
           'newlines-between': 'always',
         },
       ],
-      '@stylistic/ts/type-annotation-spacing': [
-        'error',
-        {
-          before: false,
-          after: true,
-        },
-      ],
-      'no-multi-spaces': ['error'],
-      'no-trailing-spaces': ['error'],
+
+      // Additional rules
       'comma-dangle': [
         'error',
         {
