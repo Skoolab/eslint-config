@@ -3,6 +3,7 @@ import stylisticTs from '@stylistic/eslint-plugin-ts'
 import eslintPluginImport from 'eslint-plugin-import'
 import prettierPlugin from 'eslint-plugin-prettier'
 import tseslint from 'typescript-eslint'
+import noDirectReturnRule from './custom-rules/no-direct-return.js'
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -14,6 +15,11 @@ export default tseslint.config(
       '@stylistic/ts': stylisticTs,
       import: eslintPluginImport,
       prettier: prettierPlugin,
+      custom: {
+        rules: {
+          'no-direct-return': noDirectReturnRule,
+        },
+      },
     },
     rules: {
       // Prettier rules
@@ -100,6 +106,9 @@ export default tseslint.config(
           functions: 'ignore',
         },
       ],
+
+      // Custom rules
+      'custom/no-direct-return': ['error'],
     },
     linterOptions: {
       noInlineConfig: false,
