@@ -9,6 +9,7 @@ export default tseslint.config(
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
   {
+    files: ['src/**'],
     plugins: {
       '@stylistic/ts': stylisticTs,
       import: eslintPluginImport,
