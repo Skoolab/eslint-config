@@ -4,6 +4,7 @@ import eslintPluginImport from 'eslint-plugin-import'
 import prettierPlugin from 'eslint-plugin-prettier'
 import tseslint from 'typescript-eslint'
 import noDirectReturnRule from './custom-rules/no-direct-return.js'
+import methodCallOrderRule from './custom-rules/method-call-order.js'
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -18,6 +19,7 @@ export default tseslint.config(
       custom: {
         rules: {
           'no-direct-return': noDirectReturnRule,
+          'method-call-order': methodCallOrderRule,
         },
       },
     },
@@ -109,6 +111,7 @@ export default tseslint.config(
 
       // Custom rules
       'custom/no-direct-return': ['error'],
+      'custom/method-call-order': 'error',
     },
     linterOptions: {
       noInlineConfig: false,
