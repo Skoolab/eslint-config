@@ -110,6 +110,18 @@ export default tseslint.config(
           functions: 'ignore',
         },
       ],
+      'no-restricted-syntax': [
+        'error',
+        {
+          selector: 'ExportDefaultDeclaration',
+          message:
+            'Export default is not allowed. Use named exports with {} instead.',
+        },
+        {
+          selector: 'ExportNamedDeclaration > ClassDeclaration',
+          message: 'Do not export classes directly. Use named exports with {}.',
+        },
+      ],
 
       // Custom rules
       'custom/no-direct-return': ['error'],
