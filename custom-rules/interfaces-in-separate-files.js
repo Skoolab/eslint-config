@@ -5,7 +5,7 @@ export default {
       description:
         'Ensure interfaces and types are declared in separate files from implementations',
       category: 'Best Practices',
-      recommended: false,
+      recommended: true,
     },
     messages: {
       interfaceMixed:
@@ -15,10 +15,11 @@ export default {
     schema: [],
   },
   create(context) {
-    let hasImplementation = false
-
     return {
       Program(node) {
+        let hasImplementation = false
+        let hasInterfaceOrType = false
+
         node.body.forEach(stmt => {
           if (
             stmt.type === 'ClassDeclaration' ||
@@ -28,26 +29,47 @@ export default {
             hasImplementation = true
           }
 
-          if (stmt.type === 'TSInterfaceDeclaration' && hasImplementation) {
-            context.report({
-              node: stmt,
-              messageId: 'interfaceMixed',
-              data: { name: stmt.id.name },
-            })
+          if (stmt.type === 'TSInterfaceDeclaration') {
+            hasInterfaceOrType = true
+            if (hasImplementation) {
+              context.report({
+                node: stmt,
+                messageId: 'interfaceMixed',
+                data: { name: stmt.id.name },
+              })
+            }
           }
 
           if (
             stmt.type === 'ExportNamedDeclaration' &&
-            stmt.declaration?.type === 'TSTypeAliasDeclaration' &&
-            hasImplementation
+            stmt.declaration?.type === 'TSTypeAliasDeclaration'
           ) {
-            context.report({
-              node: stmt,
-              messageId: 'typeMixed',
-              data: { name: stmt.declaration.id.name },
-            })
+            hasInterfaceOrType = true
+            if (hasImplementation) {
+              context.report({
+                node: stmt,
+                messageId: 'typeMixed',
+                data: { name: stmt.declaration.id.name },
+              })
+            }
           }
         })
+
+        if (hasInterfaceOrType && hasImplementation) {
+          node.body.forEach(stmt => {
+            if (
+              stmt.type === 'ClassDeclaration' ||
+              stmt.type === 'FunctionDeclaration' ||
+              stmt.type === 'ExportDefaultDeclaration'
+            ) {
+              context.report({
+                node: stmt,
+                messageId: 'interfaceMixed',
+                data: { name: stmt.id.name || 'Class/Function' },
+              })
+            }
+          })
+        }
       },
     }
   },
