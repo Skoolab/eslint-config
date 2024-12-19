@@ -78,6 +78,22 @@ export default tseslint.config(
             match: true,
           },
         },
+        {
+          selector: 'method',
+          format: ['camelCase'],
+          custom: {
+            regex: '^[a-z][a-zA-Z0-9]*$',
+            match: true,
+          },
+        },
+        {
+          selector: 'variable',
+          format: ['camelCase'],
+          custom: {
+            regex: '^[a-z][a-zA-Z0-9]*$',
+            match: true,
+          },
+        },
       ],
 
       // Stylistic rules
