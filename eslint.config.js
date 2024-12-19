@@ -122,6 +122,12 @@ export default tseslint.config(
           message: 'Do not export classes directly. Use named exports with {}.',
         },
       ],
+      'padding-line-between-statements': [
+        'error',
+        { blankLine: 'always', prev: 'import', next: '*' },
+        { blankLine: 'never', prev: 'import', next: 'import' },
+        { blankLine: 'always', prev: '*', next: 'export' },
+      ],
 
       // Custom rules
       'custom/no-direct-return': ['error'],
