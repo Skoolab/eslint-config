@@ -4,7 +4,7 @@ export default {
     docs: {
       description: 'Disallow direct return of values in functions',
       category: 'Best Practices',
-      recommended: false,
+      recommended: true,
     },
     messages: {
       noDirectReturn:

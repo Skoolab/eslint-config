@@ -5,7 +5,7 @@ export default {
       description:
         'Ensure methods are defined in the order they are called within a class',
       category: 'Best Practices',
-      recommended: false,
+      recommended: true,
     },
     messages: {
       incorrectOrder:
