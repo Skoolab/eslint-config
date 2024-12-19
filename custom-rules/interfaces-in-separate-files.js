@@ -15,11 +15,10 @@ export default {
     schema: [],
   },
   create(context) {
+    let hasImplementation = false
+
     return {
       Program(node) {
-        let hasImplementation = false
-        let hasInterfaceOrType = false
-
         node.body.forEach(stmt => {
           if (
             stmt.type === 'ClassDeclaration' ||
@@ -28,9 +27,10 @@ export default {
           ) {
             hasImplementation = true
           }
+        })
 
+        node.body.forEach(stmt => {
           if (stmt.type === 'TSInterfaceDeclaration') {
-            hasInterfaceOrType = true
             if (hasImplementation) {
               context.report({
                 node: stmt,
@@ -44,32 +44,15 @@ export default {
             stmt.type === 'ExportNamedDeclaration' &&
             stmt.declaration?.type === 'TSTypeAliasDeclaration'
           ) {
-            hasInterfaceOrType = true
             if (hasImplementation) {
               context.report({
-                node: stmt,
+                node: stmt.declaration,
                 messageId: 'typeMixed',
                 data: { name: stmt.declaration.id.name },
               })
             }
           }
         })
-
-        if (hasInterfaceOrType && hasImplementation) {
-          node.body.forEach(stmt => {
-            if (
-              stmt.type === 'ClassDeclaration' ||
-              stmt.type === 'FunctionDeclaration' ||
-              stmt.type === 'ExportDefaultDeclaration'
-            ) {
-              context.report({
-                node: stmt,
-                messageId: 'interfaceMixed',
-                data: { name: stmt.id.name || 'Class/Function' },
-              })
-            }
-          })
-        }
       },
     }
   },
