@@ -60,6 +60,25 @@ export default tseslint.config(
         },
       ],
       '@typescript-eslint/no-inferrable-types': 'off',
+      '@typescript-eslint/naming-convention': [
+        'error',
+        {
+          selector: 'class',
+          format: ['PascalCase'],
+          custom: {
+            regex: '^[A-Z][a-zA-Z0-9]*$',
+            match: true,
+          },
+        },
+        {
+          selector: 'interface',
+          format: ['PascalCase'],
+          custom: {
+            regex: '^[A-Z][a-zA-Z0-9]*$',
+            match: true,
+          },
+        },
+      ],
 
       // Stylistic rules
       '@stylistic/ts/indent': ['error', 2],
