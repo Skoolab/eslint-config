@@ -40,6 +40,7 @@ export default tseslint.config(
       'space-before-function-paren': ['error', 'never'],
       'space-before-blocks': ['error', 'always'],
       'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0, maxBOF: 0 }],
+      curly: ['error', 'all'],
 
       // TypeScript ESLint rules
       '@typescript-eslint/explicit-member-accessibility': [
