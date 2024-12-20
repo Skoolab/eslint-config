@@ -45,6 +45,7 @@ export default tseslint.config(
         'error',
         { max: 150, skipComments: true, skipBlankLines: true },
       ],
+      complexity: ['error', 10],
 
       // TypeScript ESLint rules
       '@typescript-eslint/explicit-member-accessibility': [
