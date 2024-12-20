@@ -102,6 +102,7 @@ export default tseslint.config(
           },
         },
       ],
+      '@typescript-eslint/require-await': 'error',
 
       // Stylistic rules
       '@stylistic/ts/indent': ['error', 2],
