@@ -41,6 +41,10 @@ export default tseslint.config(
       'space-before-blocks': ['error', 'always'],
       'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0, maxBOF: 0 }],
       curly: ['error', 'all'],
+      'max-lines': [
+        'error',
+        { max: 150, skipComments: true, skipBlankLines: true },
+      ],
 
       // TypeScript ESLint rules
       '@typescript-eslint/explicit-member-accessibility': [
