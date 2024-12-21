@@ -12,6 +12,12 @@ export default tseslint.config(
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
   {
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
     files: ['src/**'],
     plugins: {
       '@stylistic/ts': stylisticTs,
@@ -47,6 +53,7 @@ export default tseslint.config(
       ],
       complexity: ['error', 10],
       'no-eval': 'error',
+      'require-await': 'off',
 
       // TypeScript ESLint rules
       '@typescript-eslint/explicit-member-accessibility': [
