@@ -54,6 +54,7 @@ export default tseslint.config(
       complexity: ['error', 10],
       'no-eval': 'error',
       'require-await': 'off',
+      'no-implied-eval': 'error',
 
       // TypeScript ESLint rules
       '@typescript-eslint/explicit-member-accessibility': [
