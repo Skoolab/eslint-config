@@ -56,6 +56,7 @@ export default tseslint.config(
       'require-await': 'off',
       'no-implied-eval': 'error',
       'no-unreachable': 'error',
+      'no-console': ['warn'],
 
       // TypeScript ESLint rules
       '@typescript-eslint/explicit-member-accessibility': [
