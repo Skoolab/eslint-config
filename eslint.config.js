@@ -57,6 +57,7 @@ export default tseslint.config(
       'no-implied-eval': 'error',
       'no-unreachable': 'error',
       'no-console': ['warn'],
+      'no-magic-numbers': ['warn', { ignore: [0, 1], detectObjects: true }],
 
       // TypeScript ESLint rules
       '@typescript-eslint/explicit-member-accessibility': [
