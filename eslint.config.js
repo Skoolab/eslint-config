@@ -6,6 +6,7 @@ import tseslint from 'typescript-eslint'
 import noDirectReturnRule from './custom-rules/no-direct-return.js'
 import methodCallOrderRule from './custom-rules/method-call-order.js'
 import interfacesInSeparateFilesRule from './custom-rules/interfaces-in-separate-files.js'
+import functionalPlugin from 'eslint-plugin-functional'
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -23,6 +24,7 @@ export default tseslint.config(
       '@stylistic/ts': stylisticTs,
       import: eslintPluginImport,
       prettier: prettierPlugin,
+      functional: functionalPlugin,
       custom: {
         rules: {
           'no-direct-return': noDirectReturnRule,
@@ -58,7 +60,8 @@ export default tseslint.config(
       'no-unreachable': 'error',
       'no-console': ['warn'],
       'no-magic-numbers': ['warn', { ignore: [0, 1], detectObjects: true }],
-      'no-magic-strings': ['warn'],
+      // 'no-magic-strings': ['warn'], TODO: fix error
+      'functional/immutable-data': ['error'],
 
       // TypeScript ESLint rules
       '@typescript-eslint/explicit-member-accessibility': [
