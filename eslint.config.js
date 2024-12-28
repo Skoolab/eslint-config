@@ -65,6 +65,7 @@ export default tseslint.config(
       'functional/immutable-data': ['error'],
       'init-declarations': ['warn', 'always'],
       'no-new': 'error',
+      'max-params': ['warn', 3],
 
       // TypeScript ESLint rules
       '@typescript-eslint/explicit-member-accessibility': [
