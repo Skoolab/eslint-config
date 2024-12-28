@@ -7,6 +7,7 @@ import tseslint from 'typescript-eslint'
 import noDirectReturnRule from './custom-rules/no-direct-return.js'
 import methodCallOrderRule from './custom-rules/method-call-order.js'
 import interfacesInSeparateFilesRule from './custom-rules/interfaces-in-separate-files.js'
+import preferEnumRule from './custom-rules/prefer-enum.js'
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -30,6 +31,7 @@ export default tseslint.config(
           'no-direct-return': noDirectReturnRule,
           'method-call-order': methodCallOrderRule,
           'interfaces-in-separate-files': interfacesInSeparateFilesRule,
+          'prefer-enum': preferEnumRule,
         },
       },
     },
@@ -192,6 +194,7 @@ export default tseslint.config(
       'custom/no-direct-return': ['error'],
       'custom/method-call-order': 'error',
       'custom/interfaces-in-separate-files': 'error',
+      'custom/prefer-enum': 'warn',
     },
     linterOptions: {
       noInlineConfig: false,
