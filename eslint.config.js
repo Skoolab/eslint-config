@@ -61,6 +61,7 @@ export default tseslint.config(
       'no-console': ['warn'],
       'no-magic-numbers': ['warn', { ignore: [0, 1], detectObjects: true }],
       'functional/immutable-data': ['error'],
+      'init-declarations': ['warn', 'always'],
 
       // TypeScript ESLint rules
       '@typescript-eslint/explicit-member-accessibility': [
