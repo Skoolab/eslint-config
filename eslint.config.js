@@ -122,6 +122,7 @@ export default tseslint.config(
         },
       ],
       '@typescript-eslint/require-await': 'error',
+      '@typescript-eslint/no-deprecated': 'warn',
 
       // Stylistic rules
       '@stylistic/ts/indent': ['error', 2],
