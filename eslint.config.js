@@ -62,6 +62,7 @@ export default tseslint.config(
       'no-magic-numbers': ['warn', { ignore: [0, 1], detectObjects: true }],
       'functional/immutable-data': ['error'],
       'init-declarations': ['warn', 'always'],
+      'no-new': 'error',
 
       // TypeScript ESLint rules
       '@typescript-eslint/explicit-member-accessibility': [
