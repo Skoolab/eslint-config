@@ -29,6 +29,7 @@
     "prepare": "husky"
   },
   "files": [
+    "custom-rules/",
     "eslint.config.js"
   ],
   "dependencies": {
