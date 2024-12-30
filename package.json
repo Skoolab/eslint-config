@@ -38,15 +38,15 @@
     "@types/eslint__js": "^8.42.3",
     "@typescript-eslint/parser": "^8.19.0",
     "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-functional": "^7.2.0",
     "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "typescript-eslint": "^8.19.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
     "husky": "^9.1.7",
     "npm-check-updates": "^17.1.13",
     "prettier": "^3.4.2"
