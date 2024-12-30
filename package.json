@@ -35,7 +35,6 @@
   "dependencies": {
     "@eslint/js": "^9.17.0",
     "@stylistic/eslint-plugin-ts": "^2.12.1",
-    "@types/eslint__js": "^8.42.3",
     "@typescript-eslint/parser": "^8.19.0",
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
@@ -47,11 +46,12 @@
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
+    "@types/eslint__js": "^8.42.3",
     "husky": "^9.1.7",
     "npm-check-updates": "^17.1.13",
     "prettier": "^3.4.2"
   },
-  "engines": {
+  "engines`": {
     "node": "22"
   },
   "publishConfig": {
