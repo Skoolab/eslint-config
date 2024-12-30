@@ -66,7 +66,7 @@ export default tseslint.config(
       'init-declarations': ['warn', 'always'],
       'no-new': 'error',
       'max-params': ['warn', 3],
-      'require-atomic-updates': ['warn'],
+      'require-atomic-updates': 'error',
 
       // TypeScript ESLint rules
       '@typescript-eslint/explicit-member-accessibility': [
