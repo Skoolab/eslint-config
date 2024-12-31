@@ -45,3 +45,12 @@ npm install @skoolab/eslint-config eslint typescript prettier -D
    ```
 
 ---
+
+## **Custom Rules**
+
+The configuration includes custom rules tailored for TypeScript projects:
+
+- **No Direct Return**: Avoid direct returns; values must be assigned to variables before returning.
+- **Method Call Order**: Methods must be ordered top-to-bottom, respecting their call hierarchy.
+- **Interfaces in Separate Files**: Interfaces must be declared in separate files from implementation.
+- **Enforce Enums**: Prefer enums over multiple related constants.
