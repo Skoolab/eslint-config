@@ -63,3 +63,11 @@ The configuration includes custom rules tailored for TypeScript projects:
 2. **Prettier Integration**: Ensures consistent code formatting.
 3. **Functional Style Support**: Includes rules for immutability and pure functions.
 4. **Custom Linters**: Rules for interfaces, enums, and method order.
+
+---
+
+## **Support**
+
+For issues or feature requests, visit our [GitHub Issues Page](https://github.com/Skoolab/eslint-config/issues).
+
+---
