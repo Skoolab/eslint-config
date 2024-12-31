@@ -13,3 +13,13 @@ Ensure the following tools are installed and compatible with your project:
 - **eslint**: Version `^9.17.0` (peer dependency).
 - **typescript**: Version `^5.7.2` (peer dependency).
 - **prettier**: Version `^3.4.2` (peer dependency).
+
+---
+
+## **Installation**
+
+To install the Skoolab ESLint configuration, run the following command:
+
+```bash
+npm install @skoolab/eslint-config eslint typescript prettier -D
+```
