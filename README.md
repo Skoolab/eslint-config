@@ -23,3 +23,25 @@ To install the Skoolab ESLint configuration, run the following command:
 ```bash
 npm install @skoolab/eslint-config eslint typescript prettier -D
 ```
+
+---
+
+## **Usage**
+
+1. **Create an ESLint Config File**  
+   Add a `eslint.config.js` file to your project root with the following content:
+
+   ```javascript
+   import skoolabConfig from '@skoolab/eslint-config'
+
+   export default [...skoolabConfig]
+   ```
+
+2. **Lint Your Project**  
+   Use the following command to lint your files:
+
+   ```bash
+   npx eslint .
+   ```
+
+---
