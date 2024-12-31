@@ -71,3 +71,7 @@ The configuration includes custom rules tailored for TypeScript projects:
 For issues or feature requests, visit our [GitHub Issues Page](https://github.com/Skoolab/eslint-config/issues).
 
 ---
+
+## **License**
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
