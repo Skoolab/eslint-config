@@ -54,3 +54,12 @@ The configuration includes custom rules tailored for TypeScript projects:
 - **Method Call Order**: Methods must be ordered top-to-bottom, respecting their call hierarchy.
 - **Interfaces in Separate Files**: Interfaces must be declared in separate files from implementation.
 - **Enforce Enums**: Prefer enums over multiple related constants.
+
+---
+
+## **Features**
+
+1. **Customizable Rules**: Extend or override the rules as needed.
+2. **Prettier Integration**: Ensures consistent code formatting.
+3. **Functional Style Support**: Includes rules for immutability and pure functions.
+4. **Custom Linters**: Rules for interfaces, enums, and method order.
