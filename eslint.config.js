@@ -146,7 +146,7 @@ export default tseslint.config(
       'import/order': [
         'error',
         {
-          groups: [['builtin'], ['external'], ['internal']],
+          groups: [['builtin', 'external'], ['internal']],
           pathGroups: [
             {
               pattern: '@/**',
@@ -159,7 +159,7 @@ export default tseslint.config(
             order: 'asc',
             caseInsensitive: true,
           },
-          'newlines-between': 'always',
+          'newlines-between': 'never',
         },
       ],
 
