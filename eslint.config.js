@@ -212,11 +212,5 @@ export default tseslint.config(
         'padding-line-between-statements': 'off',
       },
     },
-    {
-      files: ['**/**.dto.ts'],
-      rules: {
-        'no-magic-numbers': 'off',
-      },
-    },
   ]
 )
