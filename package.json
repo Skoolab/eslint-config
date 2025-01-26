@@ -33,22 +33,22 @@
     "eslint.config.js"
   ],
   "dependencies": {
-    "@eslint/js": "^9.18.0",
+    "@eslint/js": "^9.19.0",
     "@stylistic/eslint-plugin-ts": "^2.12.1",
-    "@typescript-eslint/parser": "^8.19.1",
-    "eslint": "^9.18.0",
+    "@typescript-eslint/parser": "^8.21.0",
+    "eslint": "^9.19.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-functional": "^7.2.1",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "typescript-eslint": "^8.19.1"
+    "eslint-plugin-prettier": "^5.2.3",
+    "typescript-eslint": "^8.21.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@types/eslint__js": "^8.42.3",
     "husky": "^9.1.7",
-    "npm-check-updates": "^17.1.13",
+    "npm-check-updates": "^17.1.14",
     "prettier": "^3.4.2"
   },
   "peerDependencies": {
