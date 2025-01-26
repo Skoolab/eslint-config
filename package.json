@@ -1,6 +1,6 @@
 {
   "name": "@skoolab/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Skoolab ESlint custom rules for typescript projects.",
   "keywords": [
     "eslint",
