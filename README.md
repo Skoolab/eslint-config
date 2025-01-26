@@ -10,8 +10,8 @@ Ensure the following tools are installed and compatible with your project:
 
 - **Node.js**: Version `22` or higher.
 - **npm**: Latest version.
-- **eslint**: Version `^9.17.0` (peer dependency).
-- **typescript**: Version `^5.7.2` (peer dependency).
+- **eslint**: Version `^9.19.0` (peer dependency).
+- **typescript**: Version `^5.7.3` (peer dependency).
 - **prettier**: Version `^3.4.2` (peer dependency).
 
 ---
