@@ -26,7 +26,10 @@
     "check": "ncu --interactive --format group",
     "check-publish-files": "npm pack --dry-run",
     "lint": "eslint .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "major": "npm version major",
+    "minor": "npm version minor",
+    "patch": "npm version patch"
   },
   "files": [
     "custom-rules/",
