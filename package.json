@@ -1,6 +1,6 @@
 {
   "name": "@skoolab/eslint-config",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Skoolab ESlint custom rules for typescript projects.",
   "keywords": [
     "eslint",
@@ -26,7 +26,10 @@
     "check": "ncu --interactive --format group",
     "check-publish-files": "npm pack --dry-run",
     "lint": "eslint .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "major": "npm version major",
+    "minor": "npm version minor",
+    "patch": "npm version patch"
   },
   "files": [
     "custom-rules/",
