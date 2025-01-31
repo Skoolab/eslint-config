@@ -35,13 +35,13 @@
   "dependencies": {
     "@eslint/js": "^9.19.0",
     "@stylistic/eslint-plugin-ts": "^2.12.1",
-    "@typescript-eslint/parser": "^8.21.0",
+    "@typescript-eslint/parser": "^8.22.0",
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-functional": "^7.2.1",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.3",
-    "typescript-eslint": "^8.21.0"
+    "typescript-eslint": "^8.22.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",

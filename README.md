@@ -37,7 +37,23 @@ npm install @skoolab/eslint-config eslint typescript prettier -D
    export default [...skoolabConfig]
    ```
 
-2. **Lint Your Project**  
+2. **Add prettier configuration file**
+   Add a `.prettierrc` file to your project root with the following content:
+
+   ```json
+   {
+     "singleQuote": true,
+     "semi": false,
+     "trailingComma": "es5",
+     "tabWidth": 2,
+     "useTabs": false,
+     "printWidth": 80,
+     "arrowParens": "avoid",
+     "endOfLine": "lf"
+   }
+   ```
+
+3. **Lint Your Project**  
    Use the following command to lint your files:
 
    ```bash
