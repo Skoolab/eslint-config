@@ -212,5 +212,11 @@ export default tseslint.config(
         'padding-line-between-statements': 'off',
       },
     },
+    {
+      files: ['**/**.{spec,test}.ts'],
+      rules: {
+        'space-before-function-paren': 'off',
+      },
+    },
   ]
 )
