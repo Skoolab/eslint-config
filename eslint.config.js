@@ -125,6 +125,10 @@ export default tseslint.config(
         ],
         '@typescript-eslint/require-await': 'error',
         '@typescript-eslint/no-deprecated': 'warn',
+        '@typescript-eslint/no-unused-vars': [
+          'warn',
+          { args: 'all', argsIgnorePattern: '^_' },
+        ],
 
         // Stylistic rules
         '@stylistic/ts/indent': ['error', 2],
